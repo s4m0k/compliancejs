@@ -1,0 +1,27 @@
+{
+    "name" : "Basic",
+    "author" : "ComplianceJS",
+    "version" : "0.0.1",
+    "description" : "ComplianceJS basic rules.",
+    "rules" :
+    [
+        {
+            "id" : "eqeqeq",
+            "message": "You must use tripe equal (===) over double equal (==) to avoid automatic coercion of values being tested.",
+            "pattern": "if\\s+[(]{1}\\s*\\S*[^=]={2}[^=]\\s*\\S*"
+        },
+        
+        {
+            "id" : "noteqeq",
+            "message": "You must use not double equal (!==) over not single equal (!=) to avoid automatic coercion of values being tested.",
+            "pattern": "if\\s+[(]{1}\\s*\\S*\\s*!=[^=]\\s*\\S*"
+        },
+        
+        {
+            "id" : "doubleQuotesRequired",
+            "message": "For consistency, use double quotes for string literals.",
+            "pattern": "'[^'\"]*'(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)"
+        }    
+    ]   
+}
+

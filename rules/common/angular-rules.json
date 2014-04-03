@@ -1,0 +1,27 @@
+{
+    "name" : "AngularJS",
+    "author" : "ComplianceJS",
+    "version" : "0.0.1",
+    "description" : "ComplianceJS AngularJS coding rules",
+    "rules" :
+    [
+        {
+            "id" : "noAnonymous",
+            "message": "Anonymous function for AngularJS controller is not allowed.",
+            "pattern": "[\\.]{1}[\\n]*controller[ ]*[({1}][ ]*['\"].*['\"][ ]*,[ ]*[\\n]*function[ \\n]*"
+        },
+        {
+            "id" : "minSafe",
+            "message": "Dependency Injected objects must be minification safe.",
+            "pattern" : "\\.(controller|factory|service|provider)\\s*\\([^\\[]*?,\\s*\\w*(\\w\\s*\\)\\s*;$|function\\s*\\(\\s*.*$)",
+            "flags": "gm"
+        },
+        {
+            "id" : "properCaseForController",
+            "message": "Proper case if required when declaring controller.",
+            "pattern": "\\.controller\\s*\\({1}\\s*(\"|')[^A-Z]\\w*(\"|'){1}",
+            "flags":"g"
+        }
+    ]   
+}
+
