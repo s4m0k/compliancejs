@@ -1,0 +1,22 @@
+
+
+<div data-ng-controller="ResultController" class="result-wrapper">
+    <div class="issue-wrapper" data-ng-repeat="file in files">
+        <h1>{{file.path}}</h1>
+        <table>
+            <tr>
+                <th>Line</th>
+                <th>Column</th>
+                <th>Description</th>
+                <th>Source</th>
+            </tr>
+            
+            <tr data-ng-repeat="issue in file.issues">
+                <td>{{issue.line}}</td>
+                <td>{{issue.column}}</td>
+                <td>{{issue.description}}</td>
+                <td>{{issue.source}}</td>
+            </tr>
+        </table>
+    </div>angular.min.js
+</div>
