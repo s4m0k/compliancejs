@@ -1,0 +1,16 @@
+{
+    "exclude" : {
+        "ComplianceJS" : []
+    },
+    "files" : [
+        "test/src/js/**/*.js"
+    ],
+    "reports" : [
+        {
+            "template" : "default",
+            "type"  : "html",
+            "dist" : "reports"
+        }
+    ], 
+    "ignoreRuleFileError" : true
+}
