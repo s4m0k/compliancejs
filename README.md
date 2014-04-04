@@ -36,8 +36,7 @@ node compliance [--config=config-file]
 
 
 
-Configuration
--------------
+##Configuration
 
 Configuration is JSON formatted text file with the following table of keys.
 
@@ -46,3 +45,8 @@ Key           | Value Type           |  Required | Default | Description
 files         | Array of String      | Yes       |         | This is an array of path pointing to the files that needs to be validated. You can use abosulte or glob pattern for the filename.
 reports       | Array of JSON Object | No        |         | Reports configuration
 ignoreRuleFileError | boolean | No|true|If set to false, ComplianceJS will stop and throw exception when error is detected from rule files.
+exclude | JSON Object | No | | Exclude some rules from being validated against the files configured in "files".
+rules | Array of String | No | rules/** | An array of path pointing to the files that contains the rule definition.  Values can be absolute or glob pattern.
+plugins | Array of String | No | plugins/** | An array of path pointing to the files that contains plugin codes. Values can be absolute or glob pattern.
+
+##Report Template
