@@ -273,11 +273,13 @@ if ( config.reports && config.reports.length > 0) {
         });
     };
     
+    /* Write JSON Object to a file to be consumed by reports */
     var issuesJS = __dirname + path.sep + 'issues.js';
     fs.writeFile ( issuesJS, "var g_totalRules=" + rules.length+ ";var g_issues = " + JSON.stringify( issues ) + ";", 'utf8', function ( err ) {
-        
+        if ( err )
+            throw err;
+    });
     
-    } );
     
     var removeFolder = function(path) {
         var files = [];
