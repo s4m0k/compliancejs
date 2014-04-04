@@ -49,4 +49,61 @@ exclude | JSON Object | No | | Exclude some rules from being validated against t
 rules | Array of String | No | rules/** | An array of path pointing to the files that contains the rule definition.  Values can be absolute or glob pattern.
 plugins | Array of String | No | plugins/** | An array of path pointing to the files that contains plugin codes. Values can be absolute or glob pattern.
 
+###Key "reports"
+
+Key | Value Type | Required | Default | Description
+--- |  ----------|  --------|   -------|   -----------
+template | String | Yes | | Report template name
+type | String | Yes | | Report format.  Supports the following values : html or text
+dist | String | Yes | | The path to where the reports will be generated.
+
+###Key "exclude"
+
+Key | Value Type | Required | Default | Description 
+----| -----------|----------|---------|------------
+[Rule Collection Name] | Array of String | Yes | | Key is dynamic and must be the rule collection name defined in the rule file.  The values for this key must be the name or id of the rule that needs to be excluded.
+
+###Configuration File Example
+compliance-config.json
+``` JavaScript
+{
+    
+    "plugins" : [
+      "plugins/**/*.js"
+    ],
+    
+    "rules" : [
+      "rules/**/*.js"
+    ],
+    
+    "exclude" : {
+        "Basic" : ["eqeqeq"]
+    },
+    
+    "files" : [
+        "test/**/*.js"
+    ],
+    
+    "reports" : [
+        {
+            "template" : "default",
+            "type"  : "html",
+            "dist" : "reports"
+        }
+    ], 
+    
+    "ignoreRuleFileError" : true,
+    
+    "overrides" : [
+        {
+            "group" : "Basic", 
+            "id" : "maxComplexity",
+            "param" : {"max" : 8}
+        }
+    ]
+}
+```
+
+
+
 ##Report Template
