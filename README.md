@@ -20,7 +20,10 @@ This will be published soon in NPM.
 
 ## Dependencies
 
-ComplianceJS is a NodeJS module and that means NodeJS needs to be installed.
+- http://nodejs.org/
+- https://github.com/medikoo/cli-color
+- https://github.com/isaacs/node-glob
+- https://github.com/jprichardson/node-fs-extra
 
 ##Usage
 
