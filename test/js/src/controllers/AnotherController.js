@@ -1,9 +1,9 @@
 (function( app ) {
 	"use strict";
 	
-	function AnotherController ($rootScope,  $scope, $log, sharedService, assetFactory ) {
-		$log.debug ('Emmitting changeTitle to Valuation');
-		$rootScope.$broadcast ('changeTitle', ['Valuation']);
+	function AnotherController ($rootScope,  $scope, $log, sharedService ) {
+		$log.debug ('Emmitting changeTitle!');
+		$rootScope.$broadcast ('changeTitle', ['New Title']);
 		
 		$scope.onItemClicked = function (index) {
 			
