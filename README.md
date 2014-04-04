@@ -6,6 +6,11 @@ JavaScript coding best practices validator
 
 Version Alpha 1
 
+##Features
+
+- Custom Rules
+- Custom Plugins
+
 ##Install
 
 Just checkout the codes
