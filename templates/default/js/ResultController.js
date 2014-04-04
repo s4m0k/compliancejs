@@ -10,6 +10,10 @@ angular.module ("app").controller ("ResultController", function ($scope, $http) 
         
         return null;
     };
+    
+    $scope.totalIssues = g_issues.length;
+    $scope.totalRules = g_totalRules;
+    
     for ( var index in g_issues ) {
         var iss = g_issues [ index ];
         
