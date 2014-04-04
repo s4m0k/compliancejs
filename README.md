@@ -4,7 +4,7 @@ JavaScript coding best practices validator
 
 ##Status
 
-Version 0.01 Alpha
+Version Alpha 1
 
 ##Install
 
