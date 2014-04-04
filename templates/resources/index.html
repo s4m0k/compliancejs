@@ -5,9 +5,10 @@
 -->
 <html data-ng-app="app">
     <head>
-        <script type="application/javascript" src="js/issues.js"></script>
-        <script type="application/javascript" src="js/angular.js"></script>
         
+        <link rel="stylesheet" href="css/style.css" />
+         <script type="application/javascript" src="js/issues.js"></script>
+        <script type="application/javascript" src="js/angular.js"></script>
         <script type="application/javascript">
             angular.module ("app", []);
         </script>
@@ -15,12 +16,19 @@
         <script type="application/javascript" src="js/ResultController.js"></script>
     </head>
     <body>
-        <h1>ComplianceJS 0.01 Report</h1>
-        
-        <!-- Injected Data here -->
-        <div>
-            ${report.html}
+        <div class="main-wrapper">
+            <h1>
+                <span class="logo">Compliance<span class="js">JS</span><span class="version">&nbsp;v0.1</span></span> Report
+            </h1>
+            <div>
+                ${summary.html}
+            </div>
+            
+            <!-- Injected Data here -->
+            <div>
+                ${report.html}
+            </div>
+            <!-- Injected Data here END-->
         </div>
-        <!-- Injected Data here END-->
     </body>
 </html>
