@@ -1,8 +1,86 @@
 
+<style>
+    .issue-wrapper table tr.odd td {
+        background-color : #FAFAFA;
+    }
+    
+    .issue-wrapper table tr.even td {
+        background-color : #F2F2F2;
+    }
+    
+    
+    
+    .issue-wrapper {
+        width : 100%;
+        color : #585858;
+    }
+    
+    .issue-wrapper table {
+        width : 100%;
+        border-collapse:collapse;
+        
+    }
+    
+    table tr:first-child th:first-child {
+        -webkit-border-top-left-radius: 8px;
+        -moz-border-radius-topleft: 8px;
+        border-top-left-radius: 8px;
+    }
+    
+    table tr:first-child th:last-child {
+        -webkit-border-top-right-radius: 8px;
+        -moz-border-radius-topright: 8px;
+        border-top-right-radius: 8px;
+    }
+    
+    
+    
+    table tr td {
+        border-top : 1px solid #E6E6E6;
+        border-bottom : 1px solid #D8D8D8;
+    }
+    .issue-wrapper table td {
+        padding : 5px;
+    }
+    
+    .issue-wrapper table td:first-child, td:nth-child(2) {
+        text-align: right;
+    }
+    
+    .issue-wrapper table tr th  {
+        font-weight: bold;
+        text-align: center;
+        padding : 10px;
+        background-color: #E6E6E6;
+        color : #585858;
+    }
+    
+    .issue-wrapper table tr th:first-child, th:nth-child(2) {
+        width : 7%;
+    }
+    
+    .issue-wrapper table tr th:last-child {
+        width : 35%;
+    }
+    
+    .issue-wrapper h2  {
+        color : #0B3861;
+        width : 100%;
+        font-size : 1.25em;
+        font-style:normal;
+    }
+    
+    span.footer {
+        font-size : 0.5em;
+        color : #ccc;
+        padding : 5px;
+    }
 
+    
+</style>
 <div data-ng-controller="ResultController" class="result-wrapper">
     <div class="issue-wrapper" data-ng-repeat="file in files">
-        <h1>{{file.path}}</h1>
+        <h2>{{"[" + file.issues.length + "] " + file.path}}</h2>
         <table>
             <tr>
                 <th>Line</th>
@@ -11,12 +89,14 @@
                 <th>Source</th>
             </tr>
             
-            <tr data-ng-repeat="issue in file.issues">
+            <tr ng-class-odd="'odd'" ng-class-even="'even'" data-ng-repeat="issue in file.issues">
                 <td>{{issue.line}}</td>
                 <td>{{issue.column}}</td>
                 <td>{{issue.description}}</td>
                 <td>{{issue.source}}</td>
             </tr>
         </table>
-    </div>angular.min.js
+    </div>
 </div>
+<span class="footer">Compliance JS Default Template v1.0</span>
+
