@@ -1,5 +1,5 @@
 {
-  "name": "compliance",
+  "name": "compliancejs",
   "version": "0.0.1",
   "description": "A javascript code best practices checker that let you define your own coding rules.",
   "main": "compliance.js",
