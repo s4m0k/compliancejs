@@ -13,15 +13,22 @@ Version Alpha 1
 
 ##Install
 
-Just checkout the codes
+Just checkout the codes.
+
+This will be published soon in NPM.
+
+## Dependencies
+
+ComplianceJS is a NodeJS module and that means NodeJS needs to be installed.
 
 ##Usage
 
 
 ``` 
-compliance [--config=config-file]
+node compliance [--config=config-file]
 ```
 --config  is an optional parameter where compliance options are configured.  If --config is not present, the application will look for compliance-config.json in the directory where the command was issued.
+
 
 
 
