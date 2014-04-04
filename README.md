@@ -8,8 +8,9 @@ Version Alpha 1 Unstable
 
 ##Features
 
-- Custom Rules
-- Custom Plugins
+- Write your own rules
+- Write your own plugins
+- Write your own report templates
 
 ##Install
 
