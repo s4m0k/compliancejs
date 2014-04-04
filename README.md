@@ -104,6 +104,8 @@ compliance-config.json
 }
 ```
 
+##How to create and add your custom rules?
 
+##How to create and add your own plugins?
 
 ##Report Template
