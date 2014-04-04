@@ -1,0 +1,51 @@
+<style>
+    .summary {
+        width : 100%;
+        padding : 10px;
+        background-color : #FFF7F2;
+        color : #585858;
+    }
+    
+    
+    
+    .summary table {
+        width : 100%;
+        border-collapse:collapse;
+    }
+    
+    .summary table tr th, td {
+        text-align: left;
+        border : none !important;
+        padding : 8px;
+    }
+    
+    .summary table tr th:first-child {
+        width : 30%;
+    }
+    
+    .summary table tr th:nth-child(2) {
+        width : 1%;
+    }
+</style>
+
+<div class="summary" data-ng-controller="ResultController">
+    <table>
+        <tr>
+            <th>Total number of rules loaded</th>
+            <th>:</th>
+            <td>{{totalRules}}</td>
+        </tr>
+        <tr>
+            <th>Total number of files validated</th>
+            <th>:</th>
+            <td>{{files.length}}</td>
+        </tr>
+        
+        <tr>
+            <th>Total number of issues found</th>
+            <th>:</th>
+            <td>{{totalIssues}}</td>
+        </tr>
+        
+    </table>
+</div>
