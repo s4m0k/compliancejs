@@ -20,10 +20,10 @@ This will be published soon in NPM.
 
 ## Dependencies
 
-- http://nodejs.org/
-- https://github.com/medikoo/cli-color
-- https://github.com/isaacs/node-glob
-- https://github.com/jprichardson/node-fs-extra
+- [NodeJS] (http://nodejs.org/)
+- [cli-color] (https://github.com/medikoo/cli-color)
+- [node-glob] (https://github.com/isaacs/node-glob)
+- [fs-extra] (https://github.com/jprichardson/node-fs-extra)
 
 ##Usage
 
