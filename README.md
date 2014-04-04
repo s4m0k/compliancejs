@@ -43,6 +43,6 @@ Configuration is JSON formatted text file with the following table of keys.
 
 Key           | Value Type           |  Required | Default | Description
 ------------- | ---------------------|-----------|---------| -----------
-files         | Array of String      | Yes       |         | This is an array of path pointing to the files that needs to be validated. 
+files         | Array of String      | Yes       |         | This is an array of path pointing to the files that needs to be validated. You can use abosulte or glob pattern for the filename.
 reports       | Array of JSON Object | No        |         | Reports configuration
 ignoreRuleFileError | boolean | No|true|If set to false, ComplianceJS will stop and throw exception when error is detected from rule files.
