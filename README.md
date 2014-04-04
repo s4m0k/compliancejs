@@ -1,6 +1,6 @@
 #ComplianceJS
 
-JavaScript coding best practices validator
+JavaScript coding best practices validator written with NodeJS.
 
 ##Status
 
