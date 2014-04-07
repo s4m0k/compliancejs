@@ -6,6 +6,17 @@
   "directories": {
     "test": "test"
   },
+  
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/s4m0k/compliancejs.git"
+  },
+
+  "bugs": {
+    "url": "https://github.com/s4m0k/compliancejs/issues"
+  },
+  
+  
   "dependencies": {
     "cli-color": "~0.2.3",
     "glob": "~3.2.9",
