@@ -4,7 +4,7 @@ JavaScript coding best practices validator written with NodeJS.
 
 ##Status
 
-Version Alpha 1 Unstable
+Version 0.0.5
 
 ##Features
 
@@ -14,9 +14,7 @@ Version Alpha 1 Unstable
 
 ##Install
 
-Just checkout the codes.
-
-This will be published soon in NPM.
+    npm install -g compliancejs
 
 ## Dependencies
 
@@ -27,8 +25,7 @@ This will be published soon in NPM.
 
 ##Usage
 
-
-    node compliance [--config=config-file]
+    compliance [--config=config-file]
 
 --config  is an optional parameter where compliance options are configured.  If --config is not present, the application will look for compliance-config.json in the directory where the command was issued.
 
