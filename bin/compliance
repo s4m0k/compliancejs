@@ -1,0 +1,3 @@
+#!/usr/bin/env node
+var cjs = require ("../lib/compliance.js");
+cjs.check();
