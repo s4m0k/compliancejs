@@ -1,6 +1,6 @@
 {
   "name": "compliancejs",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A javascript code best practices checker that let you define your own coding rules.",
   "main": "./lib/compliance.js",
   "directories": {
@@ -14,7 +14,7 @@
     "url": "https://github.com/s4m0k/compliancejs/issues"
   },
   "bin": {
-    "compliance": "./lib/compliance.js"
+    "compliance": "./bin/compliance"
   },
   "dependencies": {
     "cli-color": "~0.2.3",
