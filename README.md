@@ -4,7 +4,7 @@ JavaScript coding best practices validator written with NodeJS.
 
 ##Status
 
-Version 0.0.5
+Version 0.0.6
 
 ##Features
 
@@ -69,7 +69,7 @@ compliance-config.json
     ],
     
     "rules" : [
-      "rules/**/*.js"
+      "rules/**/*.json"
     ],
     
     "exclude" : {
