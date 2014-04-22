@@ -69,7 +69,7 @@ compliance-config.json
     ],
     
     "rules" : [
-      "rules/**/*.json"
+      "rules"
     ],
     
     "exclude" : {
