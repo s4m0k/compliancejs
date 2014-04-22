@@ -5,8 +5,10 @@
     ],
     
     "rules" : [
-    
+        "rules"
     ],
+    
+    "excludeDefaultRules" : true,
     
     "exclude" : {
         "s4m0k" : []
