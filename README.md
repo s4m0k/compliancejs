@@ -102,6 +102,8 @@ compliance-config.json
 
 ##How to create and add your custom rules?
 
+See [Writing Custom Rules] (https://github.com/s4m0k/compliancejs/wiki/Rules)
+
 ##How to create and add your own plugins?
 
 ##Report Template
