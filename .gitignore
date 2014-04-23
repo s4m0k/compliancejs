@@ -1,2 +1,2 @@
-
-reports/html-default/js/issues.js
+reports/**/*
+node_modules/**/*
