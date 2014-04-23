@@ -1,6 +1,6 @@
 {
   "name": "compliancejs",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "A javascript code best practices checker that let you define your own coding rules.",
   "main": "./lib/compliance.js",
   "directories": {
