@@ -25,9 +25,11 @@ Alpha
 
 ##Usage
 
-    compliance [--config=config-file]
+    compliance [--verbose] [--config=config-file]
 
---config  is an optional parameter where compliance options are configured.  If --config is not present, the application will look for compliance-config.json in the directory where the command was issued.
+````--config````  is an optional parameter where compliance options are configured.  If --config is not present, the application will look for compliance-config.json in the directory where the command was issued.
+
+````--verbose```` optional parameter to show all console logs.
 
 
 
