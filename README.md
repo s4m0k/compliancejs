@@ -4,7 +4,7 @@ JavaScript coding best practices validator written with NodeJS.
 
 ##Status
 
-Version 0.0.10
+Alpha 
 
 ##Features
 
